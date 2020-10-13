@@ -43,6 +43,7 @@ input{
     border: 1px solid rgb(209, 208, 208);
     border-radius: .5em;
     font-size: 1em;
+   
 }
 
 input:focus{
@@ -78,7 +79,7 @@ p{
 .inputs{
     padding-bottom: 1em;
     margin: auto;
-    width: 80%;
+    width: 60%;
 }
 
 @media screen and (max-width: 480px){
