@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    background-image: url('../images/classroom.jpg'), linear-gradient(40deg, #827bff, #4c004c);
+    background-repeat: no-repeat, no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover, cover;
+    background-position: center, center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+form{
+    height: 80vh;
+    background-color: #ffffff;
+    max-width: 70%;
+    padding: 3em;
+    border-radius: .5em;
+    margin: 5em auto;
+}
+
+fieldset{
+    border: none;
+}
+
+legend{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    padding: .5em;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: .5em;
+    font-size: 1em;
+}
+
+input:focus{
+    outline: 1px solid #ff71fa;
+    font-weight: bold;
+}
+
+.sign-up-btn{
+    display: block;
+    min-width: 50%;
+    margin: 3em auto;
+    padding: .8em;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(40deg, rgb(24, 131, 163), rgb(204, 34, 204));
+    border: none;
+    outline: none;
+    border-radius: .5em;
+    cursor: pointer;
+
+}
+
+p{
+    text-align: center;
+}
+
+.sign-up-btn:hover, .sign-up-btn:focus{
+    background: linear-gradient(45deg,  rgb(204, 34, 204), rgb(24, 131, 163));
+}
+
+.inputs{
+    padding-bottom: 1em;
+    margin: auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 480px){
+    form{
+        max-width: 100%;
+    }
+
+    .inputs{
+        width: 100%;
+    }
+}
+
+
