@@ -1,15 +1,268 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-body{
-  line-height: 1.5;
+
+body {
+  line-height: 1.4;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-weight: normal;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  background-color: #010169;
+  color: white;
+  font-family: "Encode Sans Expanded", Arial, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+/* the nav */
+
+nav {
+  justify-content: space-between;
+  padding: 0 5%;
+  color: #4040ff;
+  font-weight: 600;
+  min-height: 100px;
+  border-bottom: 2px solid rgb(129, 115, 115);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+nav a {
+  text-decoration: none;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-transform: capitalize;
+  padding: 10px 10px;
+}
+
+/* Main header section */
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  color: #d102d1;
+  padding: 20px;
+}
+
+.main-header button {
+  background-color: #4040ff;
+}
+
+button {
+  border-style: none;
+  padding: 20px;
+  color: #ffffff;
+  width: 200px;
+  border-radius: 7px;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h1 {
+  color: #161922;
+  font-weight: 800;
+  letter-spacing: 0px;
+  font-size: 26px;
+  line-height: 42px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header {
+  /* background-color: hsl(56, 97%, 47%); */
+  background-color: hsl(0, 0%, 100%);
+}
+
+header img {
+  display: none;
+}
+
+main>section {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+h3{
+  color: #030013;
+  margin: 10px;
+  font-size: 1.5em;
+
+}
+
+h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.about {
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.about>div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.about ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: square;
+  width: 90%;
+  margin: auto;
+}
+
+.about button {
+  background-color: hsl(56, 97%, 47%);
+  color: #161922;
+  margin: 20px auto;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.services img {
+  width: 50%;
+  margin: auto;
+}
+.services p {
+  color: blue;
+}
+
+.bg1 {
+  background-color: #e265de;
+}
+
+.bg2 {
+  background-color:#faefc2;
+  color: blue;
+}
+
+.bg3 {
+  background-color: #FEA0A0;
+}
+
+.services-container {
+  background-color:rgba(177, 177, 177, 0.274);
+}
+
+.services-container button {
+  color: blue;
+  background-color: white;
+  margin: auto;
+}
+
+.sm-only {
+  display: flex;
+}
+
+.lg-only {
+  display: none;
+}
+
+.menu {
+  background-color: hsl(207, 67%, 71%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 50vh;
+  z-index: 0;
+  padding-top: 80px;
+}
+
+footer {
+  background-color: #030013;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100px;
+  color: #808080;
+}
+
+.toggle-button {
+  width: 50px;
+  height: 50px;
+  color: yellow;
+  background: rgb(189, 189, 189);
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width:700px) {
+  .services-container>div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+  .services {
+    width: 30%;
+    margin: 2px;
+    text-align: center;
+  }
+  header img {
+    width: 50%;
+    border-radius: 8px;
+  }
+  .about>div {
+    grid-template-columns: 2fr 2fr;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .sm-only {
+    display: none;
+  }
+  .lg-only {
+    display: flex;
+  }
 }
