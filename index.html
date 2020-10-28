@@ -14,14 +14,14 @@
 <body>
   <header>
     <nav>
-      <a href="index.html" style="font-weight: 900; font-size: larger;">
-        <span style="color:yellowgreen">Competent</span>
-        <span style="color:blue;">Teacher</span>
+      <a href="/index.html">
+        <span class="logo1">Competent</span>
+        <span class="logo2">Teacher</span>
       </a>
       <div>
         <ul class="lg-only nav">
           <li>
-            <a href="./pages/about.html">about</a>
+            <a href="/index.html">home</a>
           </li>
           <li>
             <a href="./pages/contact.html">contact</a>
@@ -38,53 +38,68 @@
         </button>
       </div>
     </nav>
-    <div class="main-header">
-      <div class="intro">
-        <h1>Teaching is noble <br>
-          Compentence is attainable<br>
-          We have the resources
+    <div class="main-header flex-row">
+      <div class="intro flex-col">
+        <h1>Teaching is noble. <br>
+          Compentence is attainable.<br>
+          We have the resources.
         </h1>
-        <button>get started</button>
+        <a href="./pages/signup.html">
+          <button>get started</button>
+        </a>
       </div>
-      <img src="./images/classroom3.jpg" alt="" class="lg-only">
+      <!-- <img src="./images/classroom3.jpg" alt="" class="lg-only"> -->
     </div>
   </header>
   <main>
-    <section class="about">
+    <section class="about flex-col">
       <h2>who we are</h2>
       <div>
         <img src="./images/classroom.jpg" alt="teachers in a team">
-        <ul>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
+        <ul class="flex-col">
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellat pariatur nemo id nobis tempore neque quis sed consectetur laboriosam.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellat pariatur nemo id nobis tempore neque quis sed consectetur laboriosam.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellat pariatur nemo id nobis tempore neque quis sed consectetur laboriosam.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellat pariatur nemo id nobis tempore neque quis sed consectetur laboriosam.
+          </li>
+          
         </ul>
       </div>
-      <button>learn more</button>
+      <a href="./pages/about.html">
+        <button>learn more</button>
+      </a>
     </section>
-    <section class="services-container">
+    <section class="services-container flex-col">
       <h2>our steps to BetterTeacher</h2>
       <div>
-        <section class="services bg1">
+        <section class="services flex-col bg1">
           <img src="./images/assessment1.jpg" alt="">
           <h3>take assessment</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi tempore quasi enim vitae corrupti quam
           </p>
         </section>
-        <section class="services bg2">
+        <section class="services flex-col bg2">
           <img src="./images/resources.jpg" alt="">
           <h3>use our resources</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minima ex, est illum soluta omnis</p>
         </section>
-        <section class="services bg3">
+        <section class="services flex-col bg3">
           <img src="./images/graduate.jpg" alt="">
           <h3>join our diploma course</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi tempore quasi enim vitae corrupti quam
           </p>
         </section>
       </div>
-      <button>Get started</button>
+      <a class="center"href="./pages/signup.html">
+        <button >Get started</button>
+      </a>
     </section>
   </main>
   <footer>

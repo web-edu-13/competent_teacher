@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BetterTeacher | Upskilling tool every teacher</title>
   <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/contact.css">
   <link rel="stylesheet"
     href="http://fonts.googleapis.com/css?family=Encode+Sans+Expanded:100,300,400,400italic,500,600,700,700italic,800">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,14 +15,14 @@
 <body>
   <header>
     <nav>
-      <a href="/index.html" style="font-weight: 900; font-size: larger;">
-        <span style="color:yellowgreen">Competent</span>
-        <span style="color:blue;">Teacher</span>
+      <a href="/index.html">
+        <span class="logo1">Competent</span>
+        <span class="logo2">Teacher</span>
       </a>
       <div>
         <ul class="lg-only nav">
           <li>
-            <a href="./about.html">about</a>
+            <a href="/index.html">Home</a>
           </li>
           <li>
             <a href="./contact.html">contact</a>
@@ -32,24 +34,50 @@
             <a href="./signin.html">sign in</a>
           </li>
         </ul>
-      <button class="toggle-button sm-only" ><span class="fa-bars sm-only menu-btn" aria-hidden="true"></span></button>
-    </div>
+        <button class="toggle-button sm-only"><span class="fa-bars sm-only menu-btn" aria-hidden="true"></span></button>
+      </div>
     </nav>
-    <div class="main-header">
-      <div class="intro">
-        <h1>Contact us Page
-        </h1>
-        
-    </div>
-    
   </header>
-  <main>
-    <p>Opps!!!</p>
-        <p>This page is still on developemnt!</p>
+  <main class="main">
+    <section class="flex-col">
+      <header class="">
+        <p class="">Let's get in touch</p>
+        <h2>Contact us</h2>
+      </header>
+      <div class="contact-main-section">
+        <form class="contact-form" method="post" action="">
+          <input class="input" type="text" name="name" placeholder="Name*" required>
+          <input class="input" type="email" name="email" placeholder="E-mail*" required>
+          <input class="input" type="text" name="phone" placeholder="Phone number" required>
+          <input class="input" class="input" type="text" name="subject" placeholder="Subject" required>
+          <textarea class="input" name="textarea" placeholder="Message" required></textarea>
+          <input class="button mg-10" type="submit" value="Send message">
+        </form>
+        <div class="contact-info">
+          <h2 class="h2">Before contacting us</h2>
+          <p>Ultrices varius tellus viverra egestas ultrices sed turpis dictum eget. Vulputate ipsum sit et mi, id
+            feugiat. Tincidunt dictum vitae metus leo.</p>
+          <h2 class="h2">Contact information</h2>
+          <ul class="contact-list">
+            <li class="">
+              <a class="" href="#">Okumagba, Warri,
+                <br> Nigeria.</a>
+            </li>
+            <li class="">
+              <a class="" href="mailto:cwertlinks@gmail.com">cwertlinks@gmail.com</a>
+            </li>
+            <li class="">
+              <span><span>Call Us: </span><a class="link link-inherit" href="tel:#">07032582254</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <small>&copy; 2020 All rights reserved at Web-Edu-13 Team of GADS2020</small>
   </footer>
   <script src="/scripts/app.js"></script>
 </body>
+
 </html>
