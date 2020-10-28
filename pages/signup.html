@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,50 +16,54 @@
 
 <body>
 
-    <header>
+  <header>
     <nav>
-      <a href="/index.html" style="font-weight: 900; font-size: larger;">
-        <span style="color:yellowgreen">Competent</span>
-        <span style="color:blue;">Teacher</span>
+      <a href="/index.html">
+        <span class="logo1">Competent</span>
+        <span class="logo2">Teacher</span>
       </a>
       <div>
-      <ul class="lg-only nav">
-        <li>
-          <a href="./about.html">about</a>
-        </li>
-        <li>
-          <a href="./contact.html">contact</a>
-        </li>
-        <li>
-          <a href="./signup.html">sign up</a>
-        </li>
-        <li>
-          <a href="./signin.html">sign in</a>
-        </li>
-      </ul>
-      <button class="toggle-button sm-only" ><span class="fa fa-bars sm-only menu-btn" aria-hidden="true"></span></button>
-    </div>
+        <ul class="lg-only nav">
+          <li>
+            <a href="/index.html">home</a>
+          </li>
+          <li>
+            <a href="./contact.html">contact</a>
+          </li>
+          <li>
+            <a href="./signup.html">sign up</a>
+          </li>
+          <li>
+            <a href="./signin.html">sign in</a>
+          </li>
+        </ul>
+        <button class="toggle-button sm-only"><span class="fa fa-bars sm-only menu-btn"
+            aria-hidden="true"></span></button>
+      </div>
     </nav>
-    <div class="main-header">
-      <div class="intro">
-        <h1>Sign Up
-        </h1>
-        
-    </div>
-    
+
   </header>
-  <main>
+  <main class="main">
     <form action="">
       <fieldset>
         <legend>Create Account</legend>
-        <div class="inputs"><input type="text" placeholder="Full name" aria-label="full name" required></div>
-        <div class="inputs"><input type="email" placeholder="Your Email" aria-label="email"></div>
-        <div class="inputs"><input type="password" placeholder="Password" aria-label="password" required></div>
-        <div class="inputs"><input type="password" placeholder="Repeat Password" required aria-label="repeat password"></div>
-        <div class="inputs sign"><button class="sign-up-btn">Sign Up</button></div>
-        <p>Already have an account? <a href="">Login Here</a></p>
+        <div class="inputs">
+          <input type="text" placeholder="First name" aria-label="First name" required></div>
+        <div class="inputs">
+          <input type="text" placeholder="Last name" aria-label="Last name" required></div>
+        <div class="inputs">
+          <input type="email" placeholder="Your Email" aria-label="email"></div>
+        <div class="inputs">
+          <input type="password" placeholder="Password" aria-label="password" required></div>
+        <div class="inputs">
+          <input type="password" placeholder="Repeat Password" required aria-label="repeat password">
+        </div>
+        <div class="inputs sign">
+          <button class="sign-up-btn">creat account</button>
+        </div>
+        <p>Already have an account? <a href="./signin.html" class="login">Login Here</a></p>
       </fieldset>
-    </form>  
+    </form>
   </main>
   <footer>
     <small>&copy; 2020 All rights reserved at Web-Edu-13 Team of GADS2020</small>
@@ -66,4 +71,5 @@
   <script src="/scripts/app.js"></script>
 
 </body>
-</html> 
+
+</html>
